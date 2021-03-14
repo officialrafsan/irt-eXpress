@@ -1,18 +1,18 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-	<h1 style="text-align: center;">{{product_category.name}}</h1>
+	<h1 style="text-align: center; color: black;font-size: 70px;border: 10px;background-color: cadetblue;border-radius: 15px">{{product_category.name}}</h1>
 	<div class="row">
 		{% for product in products %}
 			<div class="col-lg-4">
-				<img class="thumbnail" src="{{ product.get_imageURL }}">
-				<div class="box-element product">
-					<h6><strong>{{product.name}}</strong></h6>
+				<img style="box-shadow: 2px 2px 2px 2px black; border-radius: 15px ; padding: 50px; height: 400px;background-color: wheat" class="thumbnail" src="{{ product.get_imageURL }}">
+				<div style="border-radius: 15px" class="box-element product">
+					<h6 style="color: blue" ><strong>{{product.name}}</strong></h6>
 					<hr>
 
-					<button  class="update_cart btn btn-outline-secondary add-btn" product_id ="{{product.id}}">Add to Cart</button>
+					<button style="border-radius: 15px" class="update_cart btn btn-success add-btn" product_id ="{{product.id}}">Add to Cart</button>
 
-					<a class="btn btn-outline-success" href="{% url 'item_detail' product.id %}">View</a>
+					<a style="border-radius: 15px" class="btn btn-success" href="{% url 'item_detail' product.id %}">View</a>
                     <h4 style="display: inline-block; float: right"><strong><b>&#2547;</b>{{product.price}}</strong></h4>
 
 				</div>

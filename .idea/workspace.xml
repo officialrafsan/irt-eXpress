@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="95cbc67e-f33b-471f-a33b-3926aef15a8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/item_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/item_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/payment_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/payment_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/templates/store/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/show_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/show_items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/update_address.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/update_address.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +86,8 @@
       <workItem from="1610776346469" duration="4584000" />
       <workItem from="1615646447769" duration="314000" />
       <workItem from="1615646858462" duration="881000" />
-      <workItem from="1615649018893" duration="2189000" />
+      <workItem from="1615649018893" duration="5929000" />
+      <workItem from="1615698609363" duration="9807000" />
     </task>
     <servers />
   </component>

@@ -38,7 +38,7 @@
 		.dropdown-content a {
 		  color: black;
 		  padding: 8px 16px;
-		  text-decoration: none;
+		  text-decoration: black;
 		  display: block;
 		}
 
@@ -53,7 +53,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <h5><strong><a class="navbar-brand" href="{% url 'store' %}" style="color: white">irt-eXpress</a></strong></h5>
+	  <h5><strong><a class="navbar-brand" href="{% url 'store' %}" style="color: black">irt-eXpress</a></strong></h5>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -61,7 +61,7 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <h5><strong><a class="nav-link" href="{% url 'store' %}" style="color: white">Store <span class="sr-only">(current)</span></a></strong></h5>
+	        <h5><strong><a class="nav-link" href="{% url 'store' %}" style="color: black">Store <span class="sr-only">(current)</span></a></strong></h5>
 	      </li>
 	 
 	    </ul>
@@ -73,7 +73,7 @@
 			</form>
 
 			<div class="dropdown mr-sm-3">
-					  <h5><strong><a style="color: white">Categories</a></strong></h5>
+					  <h5><strong><a style="color: black">Categories</a></strong></h5>
 					  <div class="dropdown-content">
 					    {% for product in product_categories %}
 					    	<a href="{% url 'show_items' product.id %}">{{product.name}}</a>
@@ -81,23 +81,23 @@
 					  </div>
 			</div>
 	    	{% if request.user.is_authenticated %}
-	     		<h5 class="mr-sm-3"><strong><a href="{% url 'order_details' %}" style="color: white">Orders</a></strong></h5>
-	     		<h5 class="mr-sm-3"><strong><a href="{% url 'user_logout' %}" style="color: white">Logout</a></strong></h5>
+	     		<h5 class="mr-sm-3"><strong><a href="{% url 'order_details' %}" style="color: black">My Order List</a></strong></h5>
+	     		<h5 class="mr-sm-3"><strong><a href="{% url 'user_logout' %}" style="color: black">Logout</a></strong></h5>
 	     		{% if request.user.profile.photo %}
-					<a href="{% url 'profilepage' username=user.username %}"><img class="mr-sm-1" src="{{ request.user.profile.photo.url }}" width="35" height="35"></a>
+					<a href="{% url 'profilepage' username=user.username %}"><img style="border-radius: 20px" class="mr-sm-1" src="{{ request.user.profile.photo.url }}" width="35" height="35"></a>
 				{% else %}
-					<a href="{% url 'profilepage' username=user.username %}"><img class="mr-sm-1" src="/static/images/default.png" width="35" , height="35"></a>
+					<a href="{% url 'profilepage' username=user.username %}"><img style="border-radius: 20px" class="mr-sm-1" src="/static/images/default.png" width="35" , height="35"></a>
 				{% endif %}
-		    	<h5><strong><a href="{% url 'profilepage' username=request.user.username %}" style="color: white">{{request.user.username}}</a></strong></h5>
+		    	<h5><strong><a href="{% url 'profilepage' username=request.user.username %}" style="color: yellow">{{request.user.username}}</a></strong></h5>
 	     	
 	     	{% else %}
-	     		<h5 class="mr-sm-3"><strong><a href="{% url 'user_login' %}" style="color: white">Login</a></strong></h5>
+	     		<h5 class="mr-sm-3"><strong><a href="{% url 'user_login' %}" style="color: black">Login</a></strong></h5>
 	     		<div>
-		     		<h5 class="mr-sm-3"><strong><a href="{% url 'register' %}" style="color: white">SignUp</a></strong></h5>
+		     		<h5 class="mr-sm-3"><strong><a href="{% url 'register' %}" style="color: black">SignUp</a></strong></h5>
 	     		</div>
 	     	{% endif %}
 	     	<a href="{% url 'cart' %}">
-	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
+	    		<img id="cart-icon" src="{% static 'images/cart.png' %}">
 	    	</a>
 	    	<p id="cart-total">{{total_item_cart}}</p>
 
@@ -113,7 +113,7 @@
 		</div>
 	</div>
 	<footer class="footer">
-		<p style="text-align: center;">@COPYRIGHT,2020 IRT-eXpress</p>
+		<p style="text-align: center; color: red">@COPYRIGHT,2020 IRT-eXpress</p>
 	</footer>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>

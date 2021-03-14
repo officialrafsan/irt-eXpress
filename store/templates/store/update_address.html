@@ -7,11 +7,11 @@
 			<div class="box-element" id="form-wrapper">
      		<h3><strong>Edit Your Address</strong></h3>
 			
-				<form method="POST">
+				<form style="background-color: wheat" method="POST">
 					{% csrf_token %}
 					{{ form|crispy }}
 					<br>
-					<input type="submit" class="btn btn-primary mb-2" name="submit" , value='Save'>	
+					<input style="border-radius: 10px" type="submit" class="btn btn-primary mb-2" name="submit" , value='Save'>
 				</form>
 			</div>
 		</div>
